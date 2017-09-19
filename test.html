@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">   
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div id="cartao">    
+            <div id="frase" class="row">
+                <div class="col">
+                    <p class="text-center mensagem">Quote</p>
+                </div>
+            </div>
+            <div id="redes" class="row">
+                <div class="col">
+                    <a id="link" href="#" target="_blank"><span class="fa fa-twitter-square fa-3x"></span></a>
+                </div>
+                <div class="col">
+                    <button id="botao" type="button" class="btn btn-primary">New Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+  $(document).ready(function() {
+    $("#botao").on("click", function(){
+      var random = Math.floor(Math.random() * 10) + 1;
+      $(".mensagem").html(pessoas[random].frase + "<br><span class='autor'>" + pessoas[random].nome + "</span>");
+      $("#link").attr('href', 'https://twitter.com/intent/tweet?text=' + pessoas[random].frase + " - " + pessoas[random].nome);
+    });
+  });
+
+var pessoas = [{
+    nome: 'Lao Tzu',
+    frase: 'The journey of a thousand miles begins with one step.'
+    },
+    {
+    nome: 'Rocky Balboa',
+    frase: "Life's not about how hard of a hit you can give... it's about how many you can take, and still keep moving forward."
+    },
+    {
+    nome: 'Kamogawa Kenji',
+    frase: 'There are times when working hard may not be enough. But those who succeed worked hard.'
+    },
+    {
+    nome: 'Charles Chaplin',
+    frase: 'Lute com determinação, abrace a vida com paixão, perca com classe e vença com ousadia, porque o mundo pertence a quem se atreve e a vida é muito bela para ser insignificante.'
+    },
+    {
+    nome: 'Abraham Lincoln',
+    frase: 'É melhor calar-se e deixar que as pessoas pensem que você é um idiota do quer falar e acabar com a dúvida.'
+    },
+    {
+    nome: 'Jesus Christ',
+    frase: 'A new command I give you: Love one another. As I have loved you, so you must love one another.'
+    },
+    {
+    nome: 'Leonardo da Vinci',
+    frase: 'Learning never exhausts the mind.'
+    },
+    {
+    nome: 'Francis of Assisi',
+    frase: 'Lord, make me an instrument of thy peace. Where there is hatred, let me sow love.'
+    },
+    {
+    nome: 'Heraclitus',
+    frase: 'There is nothing permanent except change.'
+    },
+    {
+    nome: 'William Wallace',
+    frase: 'Every man dies, not every man truly lives.'
+}];
+
+</script>
+</body>
+</html>

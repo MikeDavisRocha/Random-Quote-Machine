@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: ##D32F2F;
+    font-weight: 300;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+body {
+ background-color: #F44336;
+}
+
+div#cartao {
+ 	background-color: white;
+	width: 60%;
+	min-height: 250px;
+	margin: 0 auto;
+	position: relative;
+	padding: 30px 40px;
+	top: 100px;
+
+}
+
+p {
+	color: black;
+	position: relative;
+	top: 50px;
+	font-size: 25px;
+}
+div#frase {
+	margin-bottom: 100px;
+}
+
+span a {
+  background-color: #536DFE;
+}
+span.autor {
+	font-size: 15px;
+}
+div#redes {
+	left: 100px;
+	position: relative;
+}
+button#botao {
+	background-color: #536DFE;
+	color: white;
+}
